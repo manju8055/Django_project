@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>This is index.html</h1>
+    <h3>Degrees offered</h3>
+    <div style="margin:10px">
+      <input id="srch1" type="text" placeholder="Search by Name">
+    </div>
+    <form action="/srch/" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+        {{ form }}
+        <br><br>
+        <div style="float:right">
+          <button type="submit" >Search</button>
+        </div>
+    </form>
+   
+    <table border="1">
+      {% for r in degree_rows %}
+        <tr>
+          <td>{{ r.title }}</td>
+          <td>{{ r.branch }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <h2>{{ inject_var }}</h2>
+    <P>Click <a href="./help.html">here</a> for help</P>
+    <img src="../static/logo.png"alt="Amrita Logo">
+
+      {% if evenOrOdd == 0 %}
+
+        <h2>Hello Amrita.</h2>
+
+      {% else %}
+
+        <h2>*********************************</h2>
+
+      {% endif %}
+
+
+
+      {% for x in fruits %}
+
+        <h1>{{ x }}</h1>
+
+      {% endfor %}
+      
+  </body>
+ 
+</html>
