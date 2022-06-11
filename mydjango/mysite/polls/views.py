@@ -14,7 +14,7 @@ from .forms import DegreeForm
 # Create your views here.
 count = 0
 srchname =""
-def index(request) :
+def index2(request) :
     global count
     count += 1
     degree_values = Degree.objects.all()
@@ -23,7 +23,7 @@ def index(request) :
     my_dict['evenOrOdd'] = evenOrOdd
     fruitList = ['Mango', 'Banana',  'Apple','Gauva']
     my_dict['fruits'] = fruitList
-    return render(request,'index.html',context=my_dict)
+    return render(request,'index2.html',context=my_dict)
 
 def index1(request) :
     return render(request,'help.html')
