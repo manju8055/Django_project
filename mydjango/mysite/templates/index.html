@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resume</title>
+</head>
+
+<body style="border:3px solid black;">
+    <center><big><strong>My Profile</strong></big></center>
+
+    <section>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img height="200px" width="200px" style="border-radius: 100px"; src="../static/manju.png">
+                    </td>
+                    <td>
+                        <strong>Name : </strong> Manjunath . A<br>
+                        <strong>Course : </strong> MTech<br>
+                        <strong>Department : </strong> Department of Computer Science and Engineering <br>
+                        <strong> College : </strong> Amrita School of Engineering, Amritapuri Campus<br>
+                        [Amrita Vishwa Vidyapeetham] <br>
+                        <strong>State : </strong> Kerala <br>
+                        <strong>Country: </strong> India
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <hr style="border-bottom:2px solid black">
+
+
+    <section>
+        <h1>Education :</h1>
+        <p><strong>1. Master of Technology | CSE </strong>(Artificial intelligence and Machine learning)</p>
+        <p><b>Amrita Vishwa Vidyapeetham</b></p>
+        <p><strong>Roll No: </strong>AM.EN.P2.AML21007</p>
+        <p>2021 – 2023</p>
+        <p>Pursuing</p>
+
+        <hr style="border-bottom:2px solid black">
+
+        <p><strong>2. Bachelor of Engineering | Computer Science and Engineering</strong> </p>
+        <p><strong>Proudhadeveraya Institute of Technology</strong></p>
+        <p>2016 – 2020</p>
+        <p>CGPA :6.1</p>
+
+        <hr style="border-bottom:2px solid black">
+
+        <p><strong>3. Pre-University Course(PUC)</strong></p>
+        <p><strong>Vijayanagar College</strong></p>
+        <p>2015 – 2016</p>
+        <p>Percentage:52</p>
+
+        <hr style="border-bottom:2px solid black">
+
+    </section>
+
+    <!-- <hr style="border-bottom:2px solid black">  -->
+
+
+
+    <SECTION>
+        <h1>SKILLS :</h1>
+        <p>• Data Structures</p>
+        <P>• Python</P>
+        <p>• Machine Learning</p>
+    </SECTION>
+
+    <hr style="border-bottom:2px solid black">
+
+    <section>
+        <h1>PROJECTS :</h1>
+        <p><strong>1. " Designing an automated system for identification and reckoning of livestock ".</strong></p>
+        <p>• The objective is to detect and recognize the livestock and to count it.</p>
+        <p><strong>2. " Secure authentication for face recognition using KNN ".</strong> </p>
+        <p>• The objective is to detect and recognize the face. </p>
+    </section>
+
+    <hr style="border-bottom:2px solid black">
+
+    <section>
+        <h1>PUBLICATIONS :</h1>
+        <p><strong>“ Designing an automated system for identification and reckoning of livestock ”</strong> </p>
+        <p>Published in JETIR Research Journal on November 2020</p>
+        <p><strong>LINK : </strong><a href="https://www.jetir.org/view?paper=JETIR2011104"> Designing an Automated System for Identification And Reckoning of Livestock (jetir.org)</a></p>
+    </section>
+
+        <h2 class="heading"> My Projects </h2>
+<div class="project">
+<ul>
+    <li>
+        <a href="{% url 'index2' %}">Django Project</a>
+    </li>
+    <li>
+        <a href="{% url 'tictactoe' %}">Tic-Tac-Toe</a>
+    </li>
+    <li>
+        <a href="{% url 'wordle' %}">Wordle</a>
+    </li>
+    <li>
+        <a href="{% url 'Youprovide' %}">EDUTECH</a>
+    </li>
+</ul>
+    </body>
+</html>

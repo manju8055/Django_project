@@ -18,9 +18,14 @@ from django.urls import path
 from polls import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.index2, name='index2'),
+    path('index2.html/', views.index2, name='index2'),
     path('index.html/', views.index, name='index'),
     path('help.html/', views.index1, name='index1'),
+    path('Youprovide.html/', views.Youprovide, name='Youprovide'),
+    path('wordle.html/', views.wordle, name='wordle'),
+    path('tictactoe.html/', views.tictactoe, name='tictactoe'),
+    path('profile.html/', views.profile, name='profile'),
     path('studentforms/', views.get_degree,name="student Form"),
     path('degree/', views.get_degree,  name='degree'),
     path('admin/', admin.site.urls),

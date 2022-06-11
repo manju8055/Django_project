@@ -65,3 +65,21 @@ def srchbyname(request):
     print("request",request)
     print("name in text")
     return HttpResponseRedirect('/degree/')
+
+#load tictactoe.html page
+def tictactoe(request):
+    return render(request,'tictactoe.html')
+
+
+#load Wordle.html page
+def wordle(request):
+    return render(request,'wordle.html')
+
+def index(request):
+    return render(request,'index.html')
+
+def profile(request):
+    return render(request,'profile.html')
+
+def Youprovide(request):
+    return render(request,'Youprovide.html')
